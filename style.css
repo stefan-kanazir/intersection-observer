@@ -1,0 +1,72 @@
+:root {
+  --text-light: #fff;
+  --text-dark: #000;
+  --background: #cdd1c4;
+  --foreground: #000;
+  --success: #3f6c51;
+  --destructive: #ac3931;
+  --accent: #f18f01;
+  --foreground: 0 0% 98%;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100dvh;
+  background-color: var(--background);
+}
+
+#main-section {
+  display: flex;
+  height: 100dvh;
+}
+
+#box {
+  background-color: var(--destructive);
+  position: sticky;
+  display: inline-flex;
+  height: min-content;
+  margin: 0 auto;
+  top: 24px;
+  padding: 8px 16px;
+  color: var(--text-light);
+  border-radius: 6px;
+}
+
+#card {
+  width: 200px;
+  height: 200px;
+  border-radius: 24px;
+  background-color: var(--accent);
+  margin: 200px auto;
+}
