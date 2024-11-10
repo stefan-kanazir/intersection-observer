@@ -58,12 +58,17 @@ body {
   height: min-content;
   margin: 0 auto;
   top: 24px;
-  padding: 8px 16px;
+  height: 100px;
+  width: 200px;
   color: var(--text-light);
   border-radius: 6px;
 }
 
-#card {
+#box.is-visible {
+  background-color: var(--success);
+}
+
+#target {
   width: 200px;
   height: 200px;
   border-radius: 24px;

@@ -9,11 +9,33 @@
   <body>
     <main>
       <section id="main-section">
-        <div id="box">Is visible?</div>
+        <div id="box"></div>
       </section>
 
-      <div id="card"></div>
+      <div id="target"></div>
     </main>
-    <script></script>
+    <script>
+      const mainSection = document.getElementById("main-section");
+      const target = document.getElementById("target");
+      const box = document.getElementById("box");
+
+      const options = {
+        root: mainSection,
+        threshold: 1.0,
+      };
+
+      //   Docs - https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          console.log("Target is in intersecting");
+
+          box.classList.add("is-visible");
+        } else {
+          box.classList.remove("is-visible");
+        }
+      });
+
+      observer.observe(target);
+    </script>
   </body>
 </html>
