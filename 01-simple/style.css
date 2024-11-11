@@ -18,32 +18,11 @@
   padding: 0;
 }
 
-/* Remove default margin and padding */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements */
-ul,
-ol {
-  list-style: none;
-}
-
 /* Set core body defaults */
 body {
   min-height: 100dvh;
   background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #main-section {
@@ -52,25 +31,33 @@ body {
 }
 
 #box {
-  background-color: var(--destructive);
   position: sticky;
   display: inline-flex;
-  height: min-content;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto;
   top: 24px;
   height: 100px;
-  width: 200px;
+  width: 260px;
+  max-width: 90%;
   color: var(--text-light);
-  border-radius: 6px;
-}
+  border-radius: 8px;
 
-#box.is-visible {
-  background-color: var(--success);
+  transition: background-color 150ms linear;
+
+  &[data-is-target-visible="true"] {
+    background-color: var(--success);
+  }
+
+  &[data-is-target-visible="false"] {
+    background-color: var(--destructive);
+  }
 }
 
 #target {
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  max-width: 90%;
+  height: 260px;
   border-radius: 24px;
   background-color: var(--accent);
   margin: 200px auto;
