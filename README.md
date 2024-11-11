@@ -16,7 +16,6 @@ A basic implementation showing how to detect when elements enter and exit the vi
 
 - Basic Intersection Observer setup
 - Handling intersection entries
-- Threshold configuration
 
 ### 02-lazy-loading-images (Coming Soon)
 
