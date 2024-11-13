@@ -1,15 +1,15 @@
 #main-section {
-  display: flex;
   height: 100dvh;
+  margin-bottom: 200px;
 }
 
 #box {
-  position: sticky;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 24px auto;
+  position: fixed;
+  display: grid;
+  place-items: center;
   top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100px;
   width: 260px;
   color: var(--text-light);
@@ -31,5 +31,5 @@
   height: 260px;
   border-radius: 24px;
   background-color: var(--accent);
-  margin: 200px auto;
+  margin: auto;
 }

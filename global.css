@@ -17,7 +17,7 @@
 body {
   max-width: 768px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 24px 24px 64px;
   min-height: 100dvh;
   background-color: var(--background);
   font-family: Arial, Helvetica, sans-serif;
