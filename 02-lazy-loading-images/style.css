@@ -4,3 +4,23 @@
   gap: 8px;
   padding: 24px 0;
 }
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.img-container {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
