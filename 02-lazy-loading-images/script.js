@@ -1,13 +1,19 @@
-const images = document.querySelectorAll("img[data-src]");
+const imageContainers = document.querySelectorAll(".img-container");
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const img = entry.target;
+        const container = entry.target;
+        const img = container.querySelector("img[data-src]");
+        const loader = container.querySelector(".loader");
+
         img.src = img.dataset.src;
         img.removeAttribute("data-src");
-        observer.unobserve(img); // Stop observing, once the image is loaded
+        // Remove loader element, once the image is loaded
+        img.onload = () => container.removeChild(loader);
+
+        observer.unobserve(container);
       }
     });
   },
@@ -17,5 +23,5 @@ const observer = new IntersectionObserver(
   }
 );
 
-// Observe each image
-images.forEach((img) => observer.observe(img));
+// Observe each image container
+imageContainers.forEach((container) => observer.observe(container));
