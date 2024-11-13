@@ -17,7 +17,15 @@ A basic implementation showing how to detect when elements enter and exit the vi
 - Basic Intersection Observer setup
 - Handling intersection entries
 
-### 02-lazy-loading-images (Coming Soon)
+### [02-lazy-loading-images](./02-lazy-loading-images)
+
+An implementation of lazy loading images using the Intersection Observer API. Images are loaded only when they're about to enter the viewport, improving initial page load performance.
+
+**Key concepts covered:**
+
+- Creating an efficient lazy loading system for images
+- Handling image loading states
+- Performance optimization techniques
 
 ### 03-infinite-scroll (Coming Soon)
 
