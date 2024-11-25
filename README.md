@@ -27,7 +27,15 @@ An implementation of lazy loading images using the Intersection Observer API. Im
 - Handling image loading states
 - Performance optimization techniques
 
-### 03-infinite-scroll (Coming Soon)
+### [03-infinite-scroll](./03-infinite-scroll)
+
+This example demonstrates how to implement infinite scroll functionality using the Intersection Observer API. Content is dynamically loaded as the user scrolls down the page, providing a seamless user experience, making it great choice for e-commerce stores, social media apps, job portals, real estate platforms etc.
+
+**Key concepts covered:**
+
+- Dynamically load content when the user reaches the bottom of the page
+- Responsive design: loading a different number of cards based on the screen size
+- Performance optimization: Using the rootMargin property to preload content slightly before it's visible in the viewport.
 
 ### 04-scroll-animations (Coming Soon)
 
