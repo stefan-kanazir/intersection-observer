@@ -1,0 +1,32 @@
+#container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20dvh;
+  background-color: var(--muted);
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+#loader {
+  text-align: center;
+  padding: 24px 0;
+}
+
+@media only screen and (min-width: 640px) {
+  #container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
