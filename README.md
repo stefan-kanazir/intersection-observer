@@ -37,7 +37,15 @@ This example demonstrates how to implement infinite scroll functionality using t
 - Responsive design: loading a different number of cards based on the screen size
 - Performance optimization: Using the rootMargin property to preload content slightly before it's visible in the viewport.
 
-### 04-scroll-animations (Coming Soon)
+### [04-scroll-animations](./04-scroll-animations)
+
+This example demonstrates how to use the Intersection Observer API to trigger scroll-based animations with a single-use mechanism.
+
+**Key concepts covered:**
+
+- Creating scroll-triggered animations
+- Implementing a one-time animation trigger
+- Adding subtle entrance animations
 
 ## 🚀 Getting Started
 
