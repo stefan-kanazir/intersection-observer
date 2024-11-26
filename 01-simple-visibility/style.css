@@ -15,14 +15,14 @@
   color: var(--text-light);
   border-radius: 8px;
   transition: background-color 150ms linear;
-}
 
-#box[data-is-target-visible="true"] {
-  background-color: var(--success);
-}
+  &[data-is-target-visible="true"] {
+    background-color: var(--success);
+  }
 
-#box[data-is-target-visible="false"] {
-  background-color: var(--destructive);
+  &[data-is-target-visible="false"] {
+    background-color: var(--destructive);
+  }
 }
 
 #target {
