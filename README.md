@@ -8,7 +8,10 @@ The goal of this repository is to provide clear, practical examples of how to us
 
 ## 📚 Examples
 
-### [01-simple-visibility](./01-simple-visibility)
+### 01-simple-visibility
+
+- #### [Code](./01-simple-visibility)
+- #### [Demo](https://stefan-kanazir.github.io/intersection-observer/01-simple-visibility)
 
 A basic implementation showing how to detect when elements enter and exit the viewport. This example helps understand the fundamental concepts of the Intersection Observer API.
 
@@ -17,7 +20,10 @@ A basic implementation showing how to detect when elements enter and exit the vi
 - Basic Intersection Observer setup
 - Handling intersection entries
 
-### [02-lazy-loading-images](./02-lazy-loading-images)
+### 02-lazy-loading-images
+
+- #### [Code](./02-lazy-loading-images)
+- #### [Demo](https://stefan-kanazir.github.io/intersection-observer/02-lazy-loading-images)
 
 An implementation of lazy loading images using the Intersection Observer API. Images are loaded only when they're about to enter the viewport, improving initial page load performance.
 
@@ -27,7 +33,10 @@ An implementation of lazy loading images using the Intersection Observer API. Im
 - Handling image loading states
 - Performance optimization techniques
 
-### [03-infinite-scroll](./03-infinite-scroll)
+### 03-infinite-scroll
+
+- #### [Code](./03-infinite-scroll)
+- #### [Demo](https://stefan-kanazir.github.io/intersection-observer/03-infinite-scroll)
 
 This example demonstrates how to implement infinite scroll functionality using the Intersection Observer API. Content is dynamically loaded as the user scrolls down the page, providing a seamless user experience, making it great choice for e-commerce stores, social media apps, job portals, real estate platforms etc.
 
@@ -37,7 +46,10 @@ This example demonstrates how to implement infinite scroll functionality using t
 - Responsive design: loading a different number of cards based on the screen size
 - Performance optimization: Using the rootMargin property to preload content slightly before it's visible in the viewport.
 
-### [04-scroll-animations](./04-scroll-animations)
+### 04-scroll-animations
+
+- #### [Code](./04-scroll-animations)
+- #### [Demo](https://stefan-kanazir.github.io/intersection-observer/04-scroll-animations)
 
 This example demonstrates how to use the Intersection Observer API to trigger scroll-based animations with a single-use mechanism.
 
