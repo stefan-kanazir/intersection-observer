@@ -3,10 +3,31 @@
 }
 
 .animation-container {
+  transition: opacity 0.5s ease-out 0.5s, transform 0.8s ease-out 0.5s;
+
+  &[data-is-viewed="true"] {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &[data-is-viewed="false"] {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 128px;
+  }
+
+  p {
+    margin: 12px 0 8px;
+  }
+
   img {
     width: 100%;
     border-radius: 16px;
     aspect-ratio: 3/2;
     object-fit: cover;
+    margin-bottom: 16px;
   }
 }
