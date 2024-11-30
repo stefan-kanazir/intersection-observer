@@ -2,6 +2,8 @@
 
 This repository contains practical examples demonstrating various use cases of the Intersection Observer API. Each example is self-contained and can be run directly in the browser without any build steps.
 
+[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+
 ## 🎯 Purpose
 
 The goal of this repository is to provide clear, practical examples of how to use the Intersection Observer API in real-world scenarios. Each example is designed to demonstrate different aspects of the API while solving common web development challenges.
